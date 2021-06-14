@@ -1,0 +1,32 @@
+.todo-container{
+    background: white;
+    margin-left: -40px;
+}
+.todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:480px;
+    max-width:700px ;
+}
+.todoItem{
+    min-width:90%;
+    display: flex;
+    align-items: center;
+    padding:0 50px
+}
+.center-else{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#summary{
+    font-size: 20px;
+    font-weight: 600;
+    color:black
+}
+details{
+    color:grey;
+    font-size: 15px;
+
+}

@@ -1,0 +1,40 @@
+body{
+    background: #eee;
+}
+.app-container{
+    background: white;
+    margin:0px 300px
+}
+.app{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.formflex{
+    width:400px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px
+}
+.head{
+    background: blue;
+    color:yellow;
+    padding:20px;
+}
+.delete{
+    background: red;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding:8px;
+    border-radius:15px;
+    cursor: pointer;
+}
+.deleteText{
+    color:white
+}
