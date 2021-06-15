@@ -6,14 +6,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width:480px;
-    max-width:700px ;
+    min-width:700px;
 }
 .todoItem{
     min-width:90%;
     display: flex;
     align-items: center;
-    padding:0 50px
+    padding:0 60px;
 }
 .center-else{
     display: flex;
@@ -21,12 +20,53 @@
     justify-content: center;
 }
 #summary{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     color:black
+
 }
 details{
     color:grey;
-    font-size: 15px;
+    font-size: 22px;
 
+}
+#delIcon{
+    font-size: 35px;
+}
+@media (max-width:1300px){
+
+}
+@media (max-width:960px){
+    #summary{
+        font-size: 20px;
+    }
+    details{
+        font-size: 16px;
+    }
+    .todo{
+        min-width: 600px;
+    }
+}
+@media (max-width:728px){
+    .todo{
+        min-width: 400px;
+    }
+}
+@media (max-width:520px){
+    #summary{
+        font-size: 18px;
+    }
+    details{
+        font-size: 13px;
+    }
+    .todo{
+        min-width:200px;
+    }
+    .todoItem{
+        min-width:100%;
+        padding:0 100px;
+    }
+    #delIcon{
+        font-size: 20px;
+    }
 }
