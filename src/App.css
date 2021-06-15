@@ -87,15 +87,16 @@ body{
     #delIcon{
         font-size:30px;
     }
-}
 @media (max-width:520px){
     .app{
         font-size: 12px;
-        
-    }
-    /* .formflex{
         width:100%
-    } */
+    }
+    
+    .formflex{
+        padding:0px;
+        width:400px;
+    }
     #large{
         font-size: 15px;
     }
@@ -104,6 +105,9 @@ body{
     }
     .app-container{
         margin:0px;
-        width:100%;
+    }
+    .head{
+        padding:20px;
+        width:400px;
     }
 }
