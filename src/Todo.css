@@ -64,7 +64,7 @@ details{
     }
     .todoItem{
         min-width:100%;
-        padding:0 100px;
+        /* padding:0 100px; */
     }
     #delIcon{
         font-size: 20px;
