@@ -3,38 +3,107 @@ body{
 }
 .app-container{
     background: white;
-    margin:0px 300px
+    margin:0px 500px
 }
 .app{
-    
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font-size: 30px;
 }
 .formflex{
-    width:400px;
+    width:600px;
     background: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding:20px
+    padding:20px;
 }
-.head{
+.head {
     background: blue;
     color:yellow;
-    padding:20px;
+    padding:30px;
 }
 .delete{
     background: red;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
     padding:8px;
     border-radius:15px;
     cursor: pointer;
 }
 .deleteText{
     color:white
+}
+#delIcon{
+    font-size:40px;
+
+}
+#large{
+    font-size: 25px;
+}
+/* media queries */
+@media (max-width:1800px){
+    .app-container{
+        margin:0px 400px
+    }
+}
+@media (max-width:1600px){
+    .app-container{
+        margin:0px 300px;
+        
+    }
+}
+@media (max-width:1300px){
+    .app{
+        font-size: 20px;
+    }
+    .app-container{
+        margin:0px 100px
+    }
+    .formflex{
+        padding:20px 5px
+    }
+}
+
+@media (max-width:960px) {
+    .app-container{
+        margin:0px 70px;
+
+    }
+    .app{
+        font-size: 15px;
+    }
+    .formflex{
+        padding:15px 0px;
+        width:400px;
+    }
+    #large{
+        font-size: 18px;
+    }
+    #delIcon{
+        font-size:30px;
+    }
+}
+@media (max-width:520px){
+    .app{
+        font-size: 12px;
+        
+    }
+    /* .formflex{
+        width:100%
+    } */
+    #large{
+        font-size: 15px;
+    }
+    #delIcon{
+        font-size:15px;
+    }
+    .app-container{
+        margin:0px;
+        width:100%;
+    }
 }
