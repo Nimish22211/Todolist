@@ -97,6 +97,9 @@ body{
         padding:0px;
         width:400px;
     }
+    .column{
+        margin: 20px 0 10px 0 ;
+    }
     #large{
         font-size: 15px;
     }
