@@ -46,23 +46,23 @@ function App() {
           <h1>Your Todo List</h1>
           <form className="formflex">
             <div >
-              <FormControl>
-                <InputLabel>Write a Todo</InputLabel>
-                <Input value={inputTitle} onChange={event => setInputTitle(event.target.value)}></Input>
+              <FormControl >
+                <InputLabel id="large">Write a Todo</InputLabel>
+                <Input id="large" value={inputTitle} onChange={event => setInputTitle(event.target.value)}></Input>
               </FormControl><br /><br />
               <FormControl>
-                <InputLabel>Write description (optional)</InputLabel>
-                <Input value={inputDesc} onChange={event => setInputDesc(event.target.value)}></Input>
+                <InputLabel id="large">Write description (optional)</InputLabel>
+                <Input id="large" value={inputDesc} onChange={event => setInputDesc(event.target.value)}></Input>
               </FormControl>
             </div>
 
 
-            <div><Button className="addBtn" type="submit" disabled={!inputTitle} onClick={addTodo} variant="contained" color="primary">
+            <div><Button id="large" type="submit" disabled={!inputTitle} onClick={addTodo} variant="contained" color="primary">
               Add Todo
             </Button></div>
           </form>
         </div>
-        <div onClick={deleteAll} className="delete"><DeleteForeverIcon className="deleteIcon" />
+        <div onClick={deleteAll} className="delete"><DeleteForeverIcon id="delIcon" />
           <div className="deleteText">Delete All</div></div>
         <ul>
 
@@ -72,7 +72,7 @@ function App() {
           ))}
         </ul>
       </div>
-    </div>
+    </div >
   )
 }
 
