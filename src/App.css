@@ -87,6 +87,7 @@ body{
     #delIcon{
         font-size:30px;
     }
+}
 @media (max-width:520px){
     .app{
         font-size: 12px;
