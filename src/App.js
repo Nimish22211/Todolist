@@ -57,7 +57,7 @@ function App() {
             </div>
 
 
-            <div><Button id="large" type="submit" disabled={!inputTitle} onClick={addTodo} variant="contained" color="primary">
+            <div><Button class="column" id="large" type="submit" disabled={!inputTitle} onClick={addTodo} variant="contained" color="primary">
               Add Todo
             </Button></div>
           </form>
