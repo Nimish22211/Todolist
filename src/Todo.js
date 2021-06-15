@@ -13,7 +13,7 @@ function Todo(props) {
                             {props.desc}
                         </details>
                     </ListItem>
-                    <DeleteForeverIcon id="delIcon" onClick={() => { props.onDelete(props.id) }} />
+                    <DeleteForeverIcon id="deleteIcon" onClick={() => { props.onDelete(props.id) }} />
                 </div>
             </List>
         </div>
