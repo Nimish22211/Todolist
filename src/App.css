@@ -94,8 +94,7 @@ body{
         width:100%
     }
     
-    .formflex{
-        padding:0px;
+    .formflex{padding:10px 0px 0px 0px;
         width:400px;
         flex-direction:column
     }
