@@ -55,8 +55,11 @@ function App() {
         });
       }
       function granted() {
-        setInterval(notifyWater, 60000) // notifyWater()
-        setInterval(notifyScreen, 50000) // notifyScreen()
+        setInterval(notifyWater, 3600000) // notifyWater()
+        setInterval(() => {
+          var interval = setInterval(notifyScreen, 3000000)
+          setTimeout(() => clearInterval(interval), 3600000)
+        }, 3600000) // notifyScreen()
       }
       function notifyWater() {
         var WATER = new Notification('DRINK WATER', {
