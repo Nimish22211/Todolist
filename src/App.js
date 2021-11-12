@@ -35,11 +35,56 @@ function App() {
   const deleteAll = () => {
     setTodos([])
   }
+  const notify = () => {
+    function notifyMe() {
+      if (!("Notification" in window)) {
+        alert("This browser does not support system notifications");
+      }
+      else if (Notification.permission === "granted") {
+        // notifyWater();
+        // notifyScreen();
+        granted();
+      }
+      else if (Notification.permission !== 'denied') {
+        Notification.requestPermission(function (permission) {
+          if (permission === "granted") {
+            // notifyWater();
+            // notifyScreen();
+            granted();
+          }
+        });
+      }
+      function granted() {
+        setInterval(notifyWater, 20000) // notifyWater()
+        setInterval(notifyScreen, 10000) // notifyScreen()
+      }
+      function notifyWater() {
+        var WATER = new Notification('DRINK WATER', {
+          body: "Please go and drink atleast 1 glass of water!",
+          icon: 'https://thumbs.dreamstime.com/b/glass-water-isolated-white-background-151821115.jpg',
+        });
+        setTimeout(WATER.close.bind(WATER), 5000);
+      }
+      function notifyScreen() {
+        var SCREEN = new Notification('MOVE AWAY FROM SCREEN', {
+          body: "Please move away from screen for 1 minute",
+          icon: 'twitter profile.jpg',
+
+        })
+        setTimeout(SCREEN.close.bind(SCREEN), 5000);
+      }
+
+    }
+    // setInterval(notifyMe, 10000)
+    notifyMe();
+  }
   // to save in local storage
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos))
   }, [todos])
   return (
+    <div>
+<button onClick={notify} style={{ position: 'absolute', fontSize: '2rem', margin: '10px' }}>Notify</button>
     <div className="app-container">
       <div className="app">
         <div className="head">
@@ -73,6 +118,7 @@ function App() {
         </ul>
       </div>
     </div >
+</div>
   )
 }
 
