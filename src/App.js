@@ -20,7 +20,7 @@ function App() {
 
   const addTodo = (event) => {
     event.preventDefault();
-    setTodos([...todos, { title: [inputTitle], desc: [inputDesc] }]);
+    setTodos([{ title: [inputTitle], desc: [inputDesc] },...todos]);
     setInputTitle('');
     setInputDesc('')
 
