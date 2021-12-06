@@ -114,7 +114,7 @@ function App() {
           <div className="deleteText">Delete All</div></div>
         <ul>
 
-          {Object.keys(todos).reverse().map((key, index) => (
+          {Object.keys(todos).map((key, index) => (
 
             <Todo title={todos[key].title} desc={todos[key].desc} onDelete={onDelete} id={index} />
           ))}
